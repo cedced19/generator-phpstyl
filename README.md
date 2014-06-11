@@ -1,4 +1,4 @@
-PHP and Stylus Generator
+#PHP and Stylus Generator
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
