@@ -5,6 +5,8 @@
 Yeoman generator for a php and stylus (and coffeescript) project.
 Without web server!
 
+![demo](https://raw.githubusercontent.com/cedced19/generator-phpstyl/master/demo.png)
+
 ##To install
 
 To install generator-phpstyl from npm, run:
