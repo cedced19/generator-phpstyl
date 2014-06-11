@@ -99,13 +99,13 @@ module.exports = function(grunt) {
       }
     },
     useminPrepare: {
-      html: 'public/index.html',
+      html: 'public/index.php',
       options: {
         dest: 'public'
       }
     },
     usemin: {
-      html: 'public/index.html'
+      html: 'public/index.php'
     },
     'gh-pages': {
       public: {
