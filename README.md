@@ -2,7 +2,8 @@
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
-Yeoman generator for a php and stylus (and coffeescript) project 
+Yeoman generator for a php and stylus (and coffeescript) project.
+Without web server!
 
 ##To install
 
