@@ -18,7 +18,7 @@
         <li>Stylus</li>
         <li>jQuery</li>
         <li>CoffeeScript</li>
-        <div class="php"><?php echo "This is php !"; ?></div>
+        <div class="php"><?php echo "This is php!"; ?></div>
       </ul>
     </main>
     <!-- build:js scripts/scripts.js-->
