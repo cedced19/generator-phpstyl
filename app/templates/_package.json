@@ -1,5 +1,5 @@
 {
-  "name": "<%= title %>-phpstyl",
+  "name": "<%= _.slugify(title) %>-phpstyl",
   "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {
