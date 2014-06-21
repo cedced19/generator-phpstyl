@@ -23,7 +23,7 @@
     </main>
     <!-- build:js scripts/scripts.js-->
     <script src="scripts/main.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <% if (jQuery) { %><script src="bower_components/jquery/dist/jquery.min.js"></script><% } %>
     <!-- endbuild-->
   </body>
 </html>

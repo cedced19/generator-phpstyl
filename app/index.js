@@ -27,15 +27,19 @@ var PhpstylGenerator = yeoman.generators.Base.extend({
       name: 'title',
       message: 'What is the title of your application?',
       default: 'Hello World'
+    },{
+      type: 'confirm',
+      name: 'jQuery',
+      message: 'Would you like jQuery ?',
+      default: true
     }];
 
     this.prompt(prompts, function (props) {
       this.title = props.title;
+      this.jQuery = props.jQuery;
 
       done();
-    }.bind(this));
-  },
-  
+
    var extractGeneratorName = function (_, appname) {
     var slugged = _.slugify(title);
     var match = slugged.match(/^$/);
