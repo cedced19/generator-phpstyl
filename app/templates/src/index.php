@@ -11,7 +11,7 @@
   <body>
     <main>
       <h1>'Allo, 'Allo!</h1>
-      <img src="http://yeoman.io/assets/img/yeoman-logo.a053.png">
+      <img src="http://yeoman.io/assets/img/yeoman-02.901d.png">
       <h3>You now have :</h3>
       <ul>
         <li>PHP</li>
