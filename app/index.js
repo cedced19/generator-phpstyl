@@ -32,11 +32,17 @@ var PhpstylGenerator = yeoman.generators.Base.extend({
       name: 'jQuery',
       message: 'Would you like jQuery ?',
       default: true
+    },{
+      type: 'confirm',
+      name: 'htmlmin',
+      message: 'Would you like minify your html ?',
+      default: true
     }];
 
     this.prompt(prompts, function (props) {
       this.title = props.title;
       this.jQuery = props.jQuery;
+      this.htmlmin = props.htmlmin;
 
       done();
 
