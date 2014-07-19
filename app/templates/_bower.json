@@ -1,7 +1,0 @@
-{
-  "name": "<%= title %>-jadestyl",
-  "version": "0.0.0",
-  "dependencies": {
-    <% if (jQuery) { %>"jquery": "1.11.0"<% } %>
-  }
-}

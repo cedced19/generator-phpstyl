@@ -3,6 +3,7 @@
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 [![Dependencies](https://david-dm.org/cedced19/generator-phpstyl.png)](https://david-dm.org/cedced19/generator-phpstyl)
 [![devDependencies](https://david-dm.org/cedced19/generator-phpstyl/dev-status.png)](https://david-dm.org/cedced19/generator-phpstyl#info=devDependencies)
+[![Build Status](https://travis-ci.org/cedced19/generator-phpstyl.svg?branch=master)](https://travis-ci.org/cedced19/generator-phpstyl)
 
 Yeoman generator for a php and stylus (and coffeescript) project.
 Without web server!

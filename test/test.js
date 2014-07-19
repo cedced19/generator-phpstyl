@@ -6,7 +6,7 @@ var yosay = require('yosay');
 var chalk = require('chalk');
 
 
-var PhpstylGenerator = yeoman.generators.Base.extend({
+var JadestylGenerator = yeoman.generators.Base.extend({
   init: function () {
     this.pkg = require('../package.json');
 
@@ -40,7 +40,7 @@ var PhpstylGenerator = yeoman.generators.Base.extend({
 
       done();
 
-   var extractGeneratorName = function (_, appname) {
+  var extractGeneratorName = function (_, appname) {
     var slugged = _.slugify(title);
     var match = slugged.match(/^$/);
 
@@ -53,7 +53,7 @@ var PhpstylGenerator = yeoman.generators.Base.extend({
     }.bind(this));
   },
 
-  bower: function () {
+    bower: function () {
         var bower = {
           name: this._.slugify(this.title + '-phpstyl'),
           private: true,
@@ -65,7 +65,7 @@ var PhpstylGenerator = yeoman.generators.Base.extend({
         }
 
         this.write('bower.json', JSON.stringify(bower, null, 2));
-  },
+      },
 
   app: function () {
     this.mkdir('src');
@@ -89,4 +89,4 @@ var PhpstylGenerator = yeoman.generators.Base.extend({
   }
 });
 
-module.exports = PhpstylGenerator;
+module.exports = JadestylGenerator;
