@@ -6,7 +6,7 @@ var yosay = require('yosay');
 var chalk = require('chalk');
 
 
-var JadestylGenerator = yeoman.generators.Base.extend({
+var PhpstylGenerator = yeoman.generators.Base.extend({
   init: function () {
     this.pkg = require('../package.json');
 
