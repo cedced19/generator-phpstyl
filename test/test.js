@@ -95,4 +95,4 @@ var PhpstylGenerator = yeoman.generators.Base.extend({
   }
 });
 
-module.exports = JadestylGenerator;
+module.exports = PhpstylGenerator;
