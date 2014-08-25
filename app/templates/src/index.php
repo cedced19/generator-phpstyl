@@ -22,8 +22,9 @@
       </ul>
     </main>
     <!-- build:js scripts/scripts.js-->
-    <script src="scripts/main.js"></script>
-    <% if (jQuery) { %><script src="bower_components/jquery/dist/jquery.min.js"></script><% } %>
+     <% if (jQuery || imgProgress) { %><script src="bower_components/jquery/dist/jquery.min.js"></script><% } %>
+     <% if (imgProgress) { %><script src="bower_components/imgprogress/imgprogress.js"></script><% } %>
+     <script src="scripts/main.js"></script>
     <!-- endbuild-->
   </body>
 </html>

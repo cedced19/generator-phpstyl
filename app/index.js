@@ -37,12 +37,18 @@ var PhpstylGenerator = yeoman.generators.Base.extend({
       name: 'htmlmin',
       message: 'Would you like minify your html ?',
       default: true
+    },{
+      type: 'confirm',
+      name: 'imgProgress',
+      message: 'Would you like add a progressbar according with the number of image in the page ?',
+      default: false
     }];
 
     this.prompt(prompts, function (props) {
       this.title = props.title;
       this.jQuery = props.jQuery;
       this.htmlmin = props.htmlmin;
+      this.imgProgress = props.imgProgress;
 
       done();
 
@@ -68,6 +74,10 @@ var PhpstylGenerator = yeoman.generators.Base.extend({
 
         if (this.jQuery) {
          bower.dependencies.jquery = '1.11.0'
+        }
+
+        if (this.imgProgress) {
+          bower.dependencies.imgprogress = 'https://github.com/cedced19/imgprogress.git';
         }
 
         this.write('bower.json', JSON.stringify(bower, null, 2));

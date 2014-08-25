@@ -1,7 +1,7 @@
 # <%= title %>
 > A project with generator-jadestyl
 
-## View slides locally
+## View site locally
 
 First, ensure you have the following installed:
 
