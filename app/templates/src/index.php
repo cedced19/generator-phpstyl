@@ -11,13 +11,13 @@
   <body>
     <main>
       <h1>'Allo, 'Allo!</h1>
-      <img src="http://yeoman.io/assets/img/yeoman-02.901d.png">
       <h3>You now have :</h3>
       <ul>
         <li>PHP</li>
         <li>Stylus</li>
-        <li>jQuery</li>
+        <% if (jQuery || imgProgress) { %><li>jQuery</li><% } %>
         <li>CoffeeScript</li>
+        <% if (imgProgress) { %><li>ImgProgress</li><% } %>
         <div class="php"><?php echo "This is php!"; ?></div>
       </ul>
     </main>

@@ -113,6 +113,9 @@ module.exports = function(grunt) {
   },
   cssmin: {
       after: {
+        options: {
+          keepSpecialComments: '0'
+        },
         files: {
           'public/styles/styles.css': ['public/styles/styles.css']
         }
@@ -137,7 +140,6 @@ module.exports = function(grunt) {
   // Load all Grunt tasks
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
-  grunt.registerTask('default', ['compile', 'useminPrepare', 'concat', 'uglify', 'usemin'<% if (htmlmin) { %>, 'htmlmin'<% } %>, 'uncss', 'cssmin:after',])
-  grunt.registerTask('compile', ['clean', 'concurrent:compile']);
-  grunt.registerTask('server', ['compile', 'concurrent:server']);
+  grunt.registerTask('default', ['concurrent:compile', 'useminPrepare', 'concat', 'uglify', 'uncss', 'cssmin:after', 'usemin'<% if (htmlmin) { %>, 'htmlmin'<% } %>]);
+  grunt.registerTask('server', ['concurrent:compile', 'concurrent:server']);
 };
