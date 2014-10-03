@@ -29,12 +29,12 @@
   "dependencies": {
     "yeoman-generator": "~0.17.1",
     "chalk": "~0.5.0",
-    "yosay": "^0.3.0"
+    "yosay": "1.0.0"
   },
   "devDependencies": {
     "mocha": "*"
   },
   "peerDependencies": {
-    "yo": ">=1.0.0"
+    "yo": ">=1.2.0"
   }
 }
