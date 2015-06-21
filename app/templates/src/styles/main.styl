@@ -1,10 +1,10 @@
-@import 'nib' // CSS3 extensions for Stylus: http://visionmedia.github.io/nib/
-
+<% if (animateCss) { %>@import 'animate.css/animate.css'<% } %>
+<% if (imgProgress) { %>@import 'imgprogress/imgprogress.css'<% } %>
 // variables!
 
 body_color = #fff
-body_selection = #2ecc71
-body_background = #16a085
+body_selection = #7fbd42
+body_background = #333
 
 h3_color = #ecf0f1
 
@@ -59,12 +59,3 @@ main
   width: 50%
   margin: auto
   padding-left: 75px
-  
-div.php
-  color: #9b59b6
-  background-color: #34495e
-  -webkit-border-radius:150px
-  border-radius:150px
-  height:30px
-  width:70%
-  padding: 10px 10px 0 10px

@@ -4,27 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><%= title %></title>
-    <!-- build:css styles/styles.css-->
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <!-- endbuild-->
+    <link rel="stylesheet" type="text/css" href="build/build.css">
   </head>
-  <body>
+  <body <% if (animateCss) { %>class=".animated.rollIn"<% } %>>
     <main>
       <h1>'Allo, 'Allo!</h1>
+      <?php echo "This is php!"; ?>
+      <img src="https://nodejs.org/images/logos/nodejs-dark.png">
       <h3>You now have :</h3>
       <ul>
         <li>PHP</li>
         <li>Stylus</li>
-        <% if (jQuery || imgProgress) { %><li>jQuery</li><% } %>
-        <li>CoffeeScript</li>
+        <% if (jQuery || imgProgress || velocity) { %><li>jQuery</li><% } %>
         <% if (imgProgress) { %><li>ImgProgress</li><% } %>
-        <div class="php"><?php echo "This is php!"; ?></div>
+        <% if (velocity) { %><li> VelocityJS </li><% } %>
       </ul>
     </main>
-    <!-- build:js scripts/scripts.js-->
-     <% if (jQuery || imgProgress) { %><script src="bower_components/jquery/dist/jquery.min.js"></script><% } %>
-     <% if (imgProgress) { %><script src="bower_components/imgprogress/imgprogress.js"></script><% } %>
-     <script src="scripts/main.js"></script>
-    <!-- endbuild-->
+     <script src="build/build.js"></script>
   </body>
 </html>

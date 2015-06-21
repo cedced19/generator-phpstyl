@@ -1,6 +1,5 @@
 .npmignore
-.editorconfig
 .travis.yml
-.jshintrc
-.gitattributes
-/test/
+demo.png
+.gitignore
+test

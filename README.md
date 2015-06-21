@@ -1,12 +1,11 @@
-#PHP and Stylus Generator
+# PHP and Stylus Generator
 
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 [![Dependencies](https://david-dm.org/cedced19/generator-phpstyl.png)](https://david-dm.org/cedced19/generator-phpstyl)
 [![devDependencies](https://david-dm.org/cedced19/generator-phpstyl/dev-status.png)](https://david-dm.org/cedced19/generator-phpstyl#info=devDependencies)
 [![Build Status](https://travis-ci.org/cedced19/generator-phpstyl.svg?branch=master)](https://travis-ci.org/cedced19/generator-phpstyl)
 [![NPM version](https://badge.fury.io/js/generator-phpstyl.svg)](http://badge.fury.io/js/generator-phpstyl)
 
-Yeoman generator for a php and stylus (and coffeescript) project.
+Yeoman generator for a php and stylus project.
 Without web server!
 
 ![demo](https://raw.githubusercontent.com/cedced19/generator-phpstyl/master/demo.png)
@@ -41,16 +40,16 @@ Initiate the generator:
 $ yo phpstyl
 ```
 
-##Grunt
+## Gulp
 
 Live compilation:
 
 ```bash
-$ grunt watch
+$ gulp serve
 ```
 
 Compile the project:
 
 ```bash
-$ grunt
+$ gulp
 ```
