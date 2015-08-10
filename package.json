@@ -24,7 +24,7 @@
     "php",
     "stylus",
     "generator",
-    "grunt"
+    "gulp"
   ],
   "dependencies": {
     "yeoman-generator": "~0.18.4",
